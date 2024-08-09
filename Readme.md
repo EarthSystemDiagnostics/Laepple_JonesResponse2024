@@ -9,10 +9,10 @@ Centre for Polar and Marine Research (AWI).
 
 The code requires some `R` libraries that can be installed via CRAN:
 ```
-install.pacakges(zoo)
-install.pacakges(tidyr)
-install.pacakges(ggplot2)
-install.pacakges(dplyr)
+install.packages(zoo)
+install.packages(tidyr)
+install.packages(ggplot2)
+install.packages(dplyr)
 ```
 
 It further requires `PaleoSpec` (an `R` package of the AWI Earth System
