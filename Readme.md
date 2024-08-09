@@ -1,25 +1,35 @@
+This directory contains `R` code to reproduce the results and figures for the
+Laepple et al. Matters Arising in response to the Jones et al., Nature 2023
+publication (doi:
+[10.1038/s41586-022-05411-8](https://doi.org/10.1038/s41586-022-05411-8).
 
-tlaepple@awi
-2024_08_08
+The analysis code was written by Thomas Laepple, with contributions to the
+library functions by Thomas Münch; both Alfred Wegener Institute, Helmholtz
+Centre for Polar and Marine Research (AWI).
 
-This directory contains the code to reproduce the results and figures
-for Laepple et al., Matters Arising in response to Jones et al., Nature 2024
+The code requires some `R` libraries that can be installed via CRAN:
+```
+install.pacakges(zoo)
+install.pacakges(tidyr)
+install.pacakges(ggplot2)
+install.pacakges(dplyr)
+```
 
-The code requires some libraries that can be installed via CRAN:
+It further requires `PaleoSpec` (an `R` package of the AWI Earth System
+Diagnostics lab to assist in the spectral analysis of timeseries) that can be
+installed from its [GitHub
+repository](https://github.com/EarthSystemDiagnostics/paleospec).
 
-zoo; tidyr; ggplot2 and dplyr
+The data folder contains all the datasets used for the analysis; if they are not
+the original datasets supplied by the original authors, a header was added to
+explain the data origin.
 
-if further requires PaleoSpec (an R package of the AWI Earth System Diagnostics lab to assist in the spectral analysis of timeseries) that can be installed via github
-https://github.com/EarthSystemDiagnostics/paleospec
-
-The data folder contains all the dataset used for the analysis; if they are not the original
-datasets supplied by the original authors, a header is added to explain their origin.
-
-The code to do the calculations and produce the figures are in the src folder
+The code to do the calculations and produce the figures are in the `src` folder:
+```
 src/Figure1andExtendedFigure1.R
 src/Figure2andExtendedDataFigure2.R
 src/Figure3andExtendedDataFigure3_DiffusionLength.R
+```
 
-In these standalone files, please adapt the path ('basedrive') to the path where you extracted directories
-
-
+In these standalone files, please adapt the path (`'basedrive'`) to the path
+of the directory into which you downloaded or cloned this project.
